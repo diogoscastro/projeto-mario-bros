@@ -1,0 +1,213 @@
+body {
+    font-family: 'Poppins';
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.personagens {
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+}
+
+.cabecalho .logo {
+    width: 65px;
+}
+
+.cabecalho .menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.cabecalho nav li a:hover {
+    background-color: #d5011d;
+}
+
+.container {
+    max-width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 132px);
+    padding: 0 30px 30px;
+}
+
+.container .imagem-titulo {
+    max-width: 450px;
+}
+
+.container .descricao {
+    color: #a8adb7;
+    width: 85%;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.container .botao-trailer {
+    background-color: #ff0021;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+}
+
+.container .botao-trailer:hover {
+    transform: scale(1.1)
+}
+
+.fundo-video {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.fundo-video .video {
+    height: 100vh;
+}
+
+.fundo-video::after {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,1) 100%);
+}
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 0.749);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.conteudo-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.fechar-modal {
+    background-color: #ffffff;
+    color: #f03a17;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal iframe {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.aberto {
+    opacity: 1;
+    visibility: visible;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 10vh 0;
+    line-height: 2em;
+    padding: 30px;
+    min-height: 100vh;
+    gap: 15px;
+}
+
+section h2 {
+    font-size: 40px;
+    box-shadow: inset 2px 2px 5px 0px rgba(0, 0, 0, 0.473);
+}
+
+section p {
+    padding-bottom: 2em;
+    font-size: 20px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.informacoes02 {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+section.informacoes02 p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+main section img {
+    max-width: 40vh;
+}
+
+section#img01 {
+    background-image: url(../imagens/fundo02.jpg);
+}
+
+section#img02 {
+    background-image: url(../imagens/fundo01.jpg);
+}
+
+section#img03 {
+    background-image: url(../imagens/fundo04.png);
+}
+
+section#img04 {
+    background-image: url(../imagens/fundo03.jpg);
+}
+
+section#img05 {
+    background-image: url(../imagens/fundo05.png);
+}
+
+main section span {
+    color: darkblue;
+    font-size: 15px;
+    box-shadow: inset 2px 2px 5px 0px rgba(255, 255, 255, 0.473);
+}

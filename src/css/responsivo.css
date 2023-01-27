@@ -1,0 +1,157 @@
+@media (max-width: 1200px) {
+    body {
+        background-color: #f44366;
+    }
+
+    .fundo-video {
+        display: none;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+    }
+
+    .container .mario {
+        max-width: 50%;
+    }
+
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .descricao {
+        color: #fff;
+        text-align: center;
+    }
+
+    .container .botao-trailer {
+        background-color: #263238;
+    }
+    
+    .container-personagens {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+    }
+
+    .personagens {
+        position: absolute;
+        flex-direction: column;
+        max-width: 70%;
+    }
+
+    main section h2 {
+        font-size: 25px;
+    }
+
+    #img01, #img02, #img03, #img04, #img05 {
+        background-size: cover;
+    }
+
+    .container-personagens .imagem {
+        max-width: 20%;
+    }
+
+    .descricao-personagem {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+
+
+    .descricao-personagem {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+    }
+
+
+main section span {
+    max-width: 22%;
+    font-size: 8px;
+}
+
+}
+
+@media (max-width: 500px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .container .imagem-titulo {
+        max-width: 75%;
+    }
+
+    .modal .fechar-modal {
+        width: 30px;
+        line-height: 30px;
+    }
+
+    .modal #video {
+        width: 300px;
+        height: 169px;
+    }
+
+    .imagem {
+        max-width: 75%;
+    }
+
+    .descricao-personagem {
+        max-width: 90%;
+        position: absolute;
+        text-align: center;
+    }
+
+    main section span, main section h2 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 376px) {
+    .modal #video {
+        width: 250px;
+        height: 140px;
+    }
+
+    .descricao-personagem {
+        max-width: 88%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .descricao-personagem {
+        max-width: 88%;
+        position: absolute;
+        text-align: center;
+    }
+
+
+    main section span, main section h2 {
+        display: none;
+    }
+
+}
